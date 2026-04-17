@@ -3,11 +3,12 @@ NIM: 24.12.3353
 Nama: rafli abid aqilah
 
 # Tugas 2
-halaman home
-https://eventamikom3353-main-53u5xc.free.laravel.cloud/
-
-halaman  admin
-https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin
+1. Halaman dashboard : https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin
+2. Halaman Event : https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin-events.html
+3. Halaman Transaksi : https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin-transactions.html
+4. Halaman Beranda : https://eventamikom3353-main-53u5xc.free.laravel.cloud/
+5. Halaman Detail Event : https://eventamikom3353-main-53u5xc.free.laravel.cloud/event-detail.html
+6. Halaman Checkout : https://eventamikom3353-main-53u5xc.free.laravel.cloud/checkout.html
 
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
