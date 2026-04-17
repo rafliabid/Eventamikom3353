@@ -1,59 +1,55 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - AmikomEventHub</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-100 font-sans flex flex-col min-h-screen">
+@extends('layouts.app')
 
-    <nav class="bg-indigo-600 shadow-md">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="text-white font-bold text-xl tracking-wider">
-                    AmikomEvent<span class="text-indigo-200">Hub</span>
-                </div>
-                <div class="hidden md:flex space-x-6">
-                    <a href="/" class="text-white border-b-2 border-white pb-1 font-semibold">Home</a>
-                    <a href="/profil" class="text-indigo-100 hover:text-white transition duration-300">Profil</a>
-                    <a href="/katalog" class="text-indigo-100 hover:text-white transition duration-300">Katalog</a>
-                    <a href="/bantuan" class="text-indigo-100 hover:text-white transition duration-300">Bantuan</a>
-                    <a href="/kontak" class="text-indigo-100 hover:text-white transition duration-300">Kontak</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <main class="flex-grow flex items-center justify-center p-6">
-        <div class="bg-white p-10 md:p-14 rounded-2xl shadow-lg border border-slate-200 text-center max-w-2xl w-full">
-            
-            <div class="w-20 h-20 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span class="text-4xl">🎉</span>
-            </div>
-            
-            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-800 mb-4">
-                Selamat Datang di AmikomEventHub
+@section('content')
+    <section class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-8">
+            <span class="inline-block px-4 py-1.5 bg-indigo-100 text-indigo-700 rounded-full text-sm font-bold uppercase tracking-wider">#1 Event Platform</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                Temukan & Pesan <span class="text-indigo-600">Tiket Event</span> Impianmu.
             </h1>
-            <p class="text-lg text-slate-500 mb-8 leading-relaxed">
-                Platform utama untuk menemukan, mendaftar, dan mengelola berbagai event menarik di lingkungan Universitas AMIKOM Yogyakarta.
+            <p class="text-lg text-slate-500 max-w-lg leading-relaxed">
+                Dari konser musik hingga workshop teknologi, semua ada di genggamanmu. Pesan aman & cepat dengan Midtrans.
             </p>
-            
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="/katalog" class="w-full sm:w-auto bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-indigo-700 hover:shadow-md transition duration-300">
-                    Jelajahi Event
+            <div class="flex gap-4">
+                <a href="#events" class="px-8 py-4 bg-indigo-600 text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-200 hover:scale-105 transition-transform">
+                    Mulai Jelajah
                 </a>
-                <a href="/profil" class="w-full sm:w-auto bg-slate-100 text-slate-700 font-semibold py-3 px-8 rounded-lg border border-slate-300 hover:bg-slate-200 hover:shadow-sm transition duration-300">
-                    Lihat Profil
+                <a href="#" class="px-8 py-4 border-2 border-slate-200 rounded-2xl font-bold text-lg hover:border-indigo-600 hover:text-indigo-600 transition">
+                    Cara Pesan
                 </a>
             </div>
-
         </div>
-    </main>
+        <div class="flex-1 relative">
+            <div class="absolute -top-10 -left-10 w-64 h-64 bg-indigo-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+            <img src="{{ asset('assets/concert.png') }}" alt="Concert" class="rounded-[2rem] shadow-2xl relative z-10 w-full object-cover aspect-[4/5] object-center">
 
-    <footer class="bg-slate-800 text-slate-400 text-center py-4 text-sm mt-auto">
-        &copy; 2026 AmikomEventHub - Praktikum Digital Bisnis.
-    </footer>
+            <div class="absolute -bottom-6 -left-6 glass p-6 rounded-2xl shadow-xl z-20 border border-white">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 font-bold uppercase">Terverifikasi</p>
+                        <p class="font-bold">Pembayaran Aman via Midtrans</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-</body>
-</html>
+    <section id="events" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h2 class="text-3xl font-extrabold mb-2">Event Terdekat</h2>
+                <p class="text-slate-500 font-medium">Jangan sampai ketinggalan acara seru minggu ini!</p>
+            </div>
+            <div class="flex gap-2">
+                <button class="p-3 border rounded-xl hover:bg-white hover:shadow-md transition">Semua Kategori</button>
+            </div>
+        </div>
+        
+        </section>
+@endsection
