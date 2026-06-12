@@ -17,6 +17,7 @@ menambahkan database migration seeding
 https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin/events#
 
 # tugas 8
+autentikasi dan middleware
 halaman login admin : https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin/events#
 
 
