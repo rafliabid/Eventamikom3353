@@ -152,4 +152,37 @@
             </div>
         </div>
     </section>
+    <section class="py-12 bg-gray-100">
+
+    <div class="container mx-auto px-6">
+
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Partner Kami
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+            @foreach ($partners as $partner)
+
+                <div class="bg-white p-4 rounded shadow text-center">
+
+                    <img
+                        src="{{ asset('storage/' . $partner->logo_url) }}"
+                        alt="{{ $partner->name }}"
+                        class="w-24 h-24 object-cover mx-auto mb-4"
+                    >
+
+                    <h3 class="font-semibold">
+                        {{ $partner->name }}
+                    </h3>
+
+                </div>
+
+            @endforeach
+
+        </div>
+
+    </div>
+
+</section>
 @endsection
