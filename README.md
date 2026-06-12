@@ -18,7 +18,7 @@ https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin/events#
 
 # tugas 8
 autentikasi dan middleware
-halaman login admin : https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin/events#
+halaman login admin : https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin/login
 
 # tugas 10
 PERTEMUAN 10 - CHECKOUT LOGIC & TRANSAKSI
