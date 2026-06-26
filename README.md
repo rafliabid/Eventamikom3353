@@ -23,6 +23,14 @@ halaman login admin : https://eventamikom3353-main-53u5xc.free.laravel.cloud/adm
 # tugas 10
 PERTEMUAN 10 - CHECKOUT LOGIC & TRANSAKSI
 https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin/transactions
+
+# tugas 11
+https://eventamikom3353-main-53u5xc.free.laravel.cloud/event/5
+https://eventamikom3353-main-53u5xc.free.laravel.cloud/checkout/5
+https://eventamikom3353-main-53u5xc.free.laravel.cloud/payment/TRX-1782483664-H8YJl
+https://eventamikom3353-main-53u5xc.free.laravel.cloud/payment/TRX-1782483664-H8YJl
+https://eventamikom3353-main-53u5xc.free.laravel.cloud/success/TRX-1782483664-H8YJl
+integrasi midtrans alhamdulillah sukses berhasil
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
