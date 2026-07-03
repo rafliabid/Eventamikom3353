@@ -31,6 +31,10 @@ https://eventamikom3353-main-53u5xc.free.laravel.cloud/payment/TRX-1782483664-H8
 https://eventamikom3353-main-53u5xc.free.laravel.cloud/payment/TRX-1782483664-H8YJl
 https://eventamikom3353-main-53u5xc.free.laravel.cloud/success/TRX-1782483664-H8YJl
 integrasi midtrans alhamdulillah sukses berhasil
+
+# tugas 12 
+https://eventamikom3353-main-53u5xc.free.laravel.cloud/admin/dashboard#
+berhasil menampilkan notifikasi pada dashboard
 <!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
