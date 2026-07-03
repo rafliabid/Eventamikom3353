@@ -16,6 +16,12 @@ $middleware->alias([
 
 ]);
 })
+->withMiddleware(function (Middleware $middleware) {
+     $middleware->validateCsrfTokens(except: [
+         '/midtrans/callback', // Mengecualikan route webhook Midtrans dari blokir CSRF
+     ]);
+ })
+
 ->withExceptions(function (Exceptions $exceptions): void {
 //
 })->create();

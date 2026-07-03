@@ -43,6 +43,10 @@ Route::prefix('admin')->name('admin.')->group(function () {
         [TransactionController::class, 'index']
     )->name('transactions.index');
 
+    Route::post('/midtrans/callback', [\App\Http\Controllers\MidtransWebhookController::class, 'handle']);
+
+
+
 
     });
 
@@ -75,31 +79,3 @@ Route::get('/payment/{order_id}', [\App\Http\Controllers\CheckoutController::cla
 Route::get('/success/{order_id}', [\App\Http\Controllers\CheckoutController::class, 'success'])->name('checkout.success');
 
 
-// Route::get('/events', [EventController::class, 'show']);
-// dan seterusnya...
-// });
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// Route::get('/tentang', function() {
-//     return '<h1>Ini adalah halaman tentang aplikasi Event Hub</h1>';
-// });
-
-// Route::get('/kontak', function() {
-//     return view('contact');
-// });
-
-// Route::get('/profile', function(){
-//     return view('profile');
-// });
-
-// Route::get('/katalog', function(){
-//     return view('katalog');
-// });
-
-// Route::get('/bantuan', function(){
-//     return view('bantuan');
-// });
-
-// Route::get('/',)
